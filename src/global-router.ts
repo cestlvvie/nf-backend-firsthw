@@ -6,8 +6,8 @@ import eventRouter from './events/event-router';
 const globalRouter = Router();
 
 
-globalRouter.use(authRouter);
-globalRouter.use(eventRouter)
+globalRouter.use('/', eventRouter); 
+globalRouter.use('/', authRouter)
 
 // other routers can be added here
 

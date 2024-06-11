@@ -29,6 +29,7 @@ class AuthController {
       }
       res.status(200).json(result);
     } catch (err) {
+      console.error('Error logging in:', err);
       res.status(500).json({ message: 'Error logging in' });
     }
   }

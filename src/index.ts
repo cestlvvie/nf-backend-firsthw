@@ -13,9 +13,6 @@ app.use(logger);
 app.use(express.json());
 app.use('/api/v1/',globalRouter);
 
-
-
-
 app.listen(PORT, () => {
   console.log(`Server runs at http://localhost:${PORT}`);
 });
