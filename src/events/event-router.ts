@@ -4,8 +4,6 @@ import EventService from './event-service';
 import EventModel from './models/event';
 import { authMiddleware } from '../middlewares/auth-middleware';
 
-//in order to provide our frontend with the user data, we need to specify user routes
-
 const eventRouter = Router();
 
 const eventService = new EventService();
